@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventOR - Your Event Planning Solution</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Event<span>OR</span></a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#providers">Providers</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn btn-outline" id="loginBtn">Log In</button>
+                <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Plan Your Perfect Event with Ease</h1>
+            <p>Find and hire the best vendors for your event - from catering to entertainment, all in one place.</p>
+            <div style="width: 100%;" class="search-bar">
+                <input type="text" placeholder="What service are you looking for?">
+                <button><i  class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Recommendation -->
+    <section class="section">
+        <div class="container">
+            <div class="ai-recommendation">
+                <h5><i class="fas fa-robot"></i> AI Recommendation</h5>
+                <p>Based on your recent searches, you might need a caterer for 50 guests. Here are some top-rated options in your area.</p>
+                <button class="btn btn-primary">View Recommendations</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Event Services</h2>
+                <p>Find everything you need to make your event unforgettable</p>
+            </div>
+            <div class="categories">
+                <div class="category-card">
+                    <div class="category-img" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="category-info">
+                        <h3>Food & Catering</h3>
+                        <p>From gourmet catering to food trucks, find the perfect culinary experience for your event.</p>
+                        <button class="btn btn-outline">Explore</button>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXZlbnQlMjBkZWNvcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="category-info">
+                        <h3>Decor & Styling</h3>
+                        <p>Transform your venue with beautiful decorations, floral arrangements, and styling services.</p>
+                        <button class="btn btn-outline">Explore</button>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" style="background-image: url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="category-info">
+                        <h3>Entertainment</h3>
+                        <p>Musicians, DJs, performers, and more to keep your guests entertained.</p>
+                        <button class="btn btn-outline">Explore</button>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" style="background-image: url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFrZXVwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="category-info">
+                        <h3>Beauty & Therapy</h3>
+                        <p>Makeup artists, hairstylists, and wellness services for you and your guests.</p>
+                        <button class="btn btn-outline">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Providers -->
+    <section class="section" id="providers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Providers</h2>
+                <p>Top-rated professionals ready to make your event special</p>
+            </div>
+            <div class="providers">
+                <!-- Provider 1 -->
+                <div class="provider-card">
+                    <div class="provider-header">
+                        <div class="provider-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg');"></div>
+                        <div class="provider-info">
+                            <h4>Sarah's Catering</h4>
+                            <div class="provider-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(128 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="provider-content">
+                        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2F0ZXJpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Catering Service">
+                        <p>Specializing in wedding and corporate catering with customizable menus for all dietary needs.</p>
+                        <div class="provider-actions">
+                            <div>
+                                <button class="like-btn"><i class="far fa-heart"></i> 42</button>
+                                <button class="comment-btn"><i class="far fa-comment"></i> 15</button>
+                            </div>
+                            <button class="hire-btn" onclick="openHireModal('Sarah\'s Catering')">Hire</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Provider 2 -->
+                <div class="provider-card">
+                    <div class="provider-header">
+                        <div class="provider-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg');"></div>
+                        <div class="provider-info">
+                            <h4>DJ Ceeba</h4>
+                            <div class="provider-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(86 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="provider-content">
+                        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="DJ Service">
+                        <p>Professional DJ with 10+ years experience in weddings, corporate events, and private parties.</p>
+                        <div class="provider-actions">
+                            <div>
+                                <button class="like-btn"><i class="far fa-heart"></i> 67</button>
+                                <button class="comment-btn"><i class="far fa-comment"></i> 23</button>
+                            </div>
+                            <button class="hire-btn" onclick="openHireModal('DJ Mark')">Hire</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Provider 3 -->
+                <div class="provider-card">
+                    <div class="provider-header">
+                        <div class="provider-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/68.jpg');"></div>
+                        <div class="provider-info">
+                            <h4> Jaleed Elegant Decor</h4>
+                            <div class="provider-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(214 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="provider-content">
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXZlbnQlMjBkZWNvcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Decor Service">
+                        <p>Full-service event design and decor company specializing in weddings and corporate events.</p>
+                        <div class="provider-actions">
+                            <div>
+                                <button class="like-btn"><i class="far fa-heart"></i> 89</button>
+                                <button class="comment-btn"><i class="far fa-comment"></i> 31</button>
+                            </div>
+                            <button class="hire-btn" onclick="openHireModal('Elegant Decor')">Hire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How EventOR Works</h2>
+                <p>Simple steps to plan your perfect event</p>
+            </div>
+            <div class="categories">
+                <div class="category-card">
+                    <div class="category-img" style="background-color: var(--secondary); display: flex; justify-content: center; align-items: center;">
+                        <i class="fas fa-search" style="font-size: 50px; color: white;"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>1. Find Providers</h3>
+                        <p>Browse our marketplace of vetted professionals across all event service categories.</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" style="background-color: var(--primary); display: flex; justify-content: center; align-items: center;">
+                        <i class="fas fa-comments" style="font-size: 50px; color: white;"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>2. Chat & Book</h3>
+                        <p>Message providers directly to discuss your needs and book their services.</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" style="background-color: var(--accent); display: flex; justify-content: center; align-items: center;">
+                        <i class="fas fa-lock" style="font-size: 50px; color: white;"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>3. Secure Payment</h3>
+                        <p>Pay securely through EventOR. Funds are held until you confirm service completion.</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" style="background-color: var(--success); display: flex; justify-content: center; align-items: center;">
+                        <i class="fas fa-calendar-check" style="font-size: 50px; color: white;"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>4. Enjoy Your Event</h3>
+                        <p>Relax and enjoy your perfectly planned event with professional services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dispute Resolution Example -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Dispute Resolution</h2>
+                <p>Fair and transparent process for any service issues</p>
+            </div>
+            <div class="dispute-card">
+                <div class="dispute-header">
+                    <h4>Dispute with Elegant Decor</h4>
+                    <span class="dispute-status status-pending">Pending</span>
+                </div>
+                <p>Submitted: June 15, 2025</p>
+                <p>Issue: Decor items not as described in the portfolio.</p>
+                <div class="dispute-actions">
+                    <button class="btn btn-outline">Add Evidence</button>
+                    <button class="btn btn-primary">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>EventOR</h4>
+                    <p>Your complete solution for event planning and vendor management.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Food & Catering</a></li>
+                        <li><a href="#">Decor & Styling</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Beauty & Therapy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Dispute Resolution</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EventOR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hire Modal -->
+    <div class="modal" id="hireModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalProviderName">Hire Provider</h3>
+                <button class="close-btn" id="closeHireModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="eventType">Event Type</label>
+                    <select id="eventType">
+                        <option value="">Select event type</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="corporate">Corporate</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="eventDate">Event Date</label>
+                    <input type="date" id="eventDate">
+                </div>
+                <div class="form-group">
+                    <label for="eventLocation">Event Location</label>
+                    <input type="text" id="eventLocation" placeholder="Enter event address">
+                </div>
+                <div class="form-group">
+                    <label for="serviceDetails">Service Details</label>
+                    <textarea id="serviceDetails" placeholder="Describe what you need..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="paymentAmount">Payment Amount ($)</label>
+                    <input type="number" id="paymentAmount" placeholder="Enter agreed amount">
+                </div>
+                <div class="ai-recommendation">
+                    <h5><i class="fas fa-robot"></i> AI Suggestion</h5>
+                    <p>Based on similar events, we recommend budgeting $1200-$1500 for this service category.</p>
+                </div>
+                <p><small>By proceeding, you agree to our <a href="#">Terms of Service</a>. Payment will be held by EventOR until service completion.</small></p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="cancelHire">Cancel</button>
+                <button class="btn btn-primary" id="confirmHire">Confirm & Pay</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Log In</h3>
+                <button class="close-btn" id="closeLoginModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+               <a href="index.html" > <button class="btn btn-primary" style="width: 100%; margin-bottom: 15px;">Log In</button><a>
+                <p style="text-align: center;">or log in with</p>
+                <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 15px;">
+                    <button class="btn btn-outline"><i class="fab fa-google"></i> Google</button>
+                    <button class="btn btn-outline"><i class="fab fa-facebook-f"></i> Facebook</button>
+                </div>
+                <p style="text-align: center;">Don't have an account? <a href="#" id="switchToSignup">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+                <button class="close-btn" id="closeSignupModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>I am a:</label>
+                    <div style="display: flex; gap: 15px; margin-bottom: 15px;">
+                        <button class="btn btn-outline user-type-btn active" data-type="user">Event Planner</button>
+                        <button class="btn btn-outline user-type-btn" data-type="provider">Service Provider</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox"> I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+                <a href="index.html"> <button class="btn btn-primary" style="width: 100%; margin-bottom: 15px;">Create Account</button> </a>
+                <p style="text-align: center;">Already have an account? <a href="#" id="switchToLogin">Log in</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header" id="chatHeader">
+            <h4>Chat with Provider</h4>
+            <button class="chat-close" id="chatClose">&times;</button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-message message-in">
+                <span class="message-sender">DJ Mark</span>
+                <div class="message-content">Hi there! Thanks for your interest in my services. What type of event are you planning?</div>
+            </div>
+            <div class="chat-message message-out">
+                <span class="message-sender">You</span>
+                <div class="message-content">Hi Mark! I'm planning a wedding reception for about 150 guests on June 15th.</div>
+            </div>
+            <div class="chat-message message-in">
+                <span class="message-sender">DJ Mark</span>
+                <div class="message-content">Congratulations! I'd love to DJ your wedding. My rate for a 5-hour reception is $1200. Would you like to discuss music preferences?</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type your message...">
+            <button class="chat-send" id="chatSend"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
